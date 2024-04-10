@@ -22,8 +22,11 @@
   font-size: 16px;
   line-height: 24px;
 
+
   color: #fbfbfb;
   background-color:  #576f35;
+
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,6 +34,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 
 
 
