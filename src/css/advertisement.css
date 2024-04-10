@@ -1,1 +1,71 @@
 /* Styles for Advertisement section */
+.advertisement {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #fbfbfb;
+}
+
+.adv-text {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+}
+
+.adv-text-span {
+    display: block;
+    color: #fbfbfb;
+    border-radius: 12px;
+    max-width: 355px;
+    height: 102px;
+    background-color: #576f35;
+    position: relative;
+    left: -10px;
+    right: 10px;
+    padding: 3px 10px;
+}
+
+@media screen and (min-width:768px) {
+
+    .advertisement {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .adv-text {
+        font-size: 64px;
+        line-height: 1.09;
+
+    }
+
+    .adv-text-span {
+        left: -16px;
+        right: 16px;
+        padding: 8px 16px;
+        max-width: 736px;
+        height: 86px;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+   
+    .adv-text {
+        font-size: 76px;
+        line-height: 1.05;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .adv-text-span {
+        display: inline-block;
+        max-width: 808px;
+        height: 86px;
+        left: -13px;
+        right: 13px;
+        padding: 0 0 0 13px;
+    }
+
+}
