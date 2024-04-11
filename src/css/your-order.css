@@ -148,9 +148,12 @@
 }
 
 .social-media-item{
-    display: inline;
+    display: inline-block;
 }
 
+.social-media-item:not(:last-child){
+    margin-bottom: 8px;
+}
 
 .social-media-item:not(:last-child):after {
     content: "/";
@@ -240,6 +243,10 @@
         margin: 0 12px;
     }
 
+    .social-media-item:not(:last-child) {
+        margin: 0;
+    }
+    
     .social-media-link{
         font-size: 32px;
         line-height: 1.0;
@@ -280,5 +287,9 @@
 
     .order-block, .social-media-block  {
         width: calc(100% - ((100px * 2) + 24px));
+    }
+
+    .social-media-item:not(:last-child) {
+        margin-bottom: 12px;
     }
 }
