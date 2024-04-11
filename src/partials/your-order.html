@@ -1,3 +1,85 @@
 <section class="your-order" id="your-order">
-  
+  <div class="container">
+    <h2 class="your-order-title">
+      fresh <span class="highlight-text-harvest">harvest</span> box has got you covered
+    </h2>
+    <p class="your-order-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+      <div class="order-wrap">
+        <div class="order-block">
+          <form class="order-form">
+            <p class="order-form-text">
+          Ordering <span class="highlight-text-from-us">from us</span> is quick and easy! Fill
+          out <span class="the-form">the form</span> below and we will contact
+          you!
+        </p>
+            <input
+              class="form-input"
+              type="text"
+              name="full-name"
+              required
+              placeholder="Full Name"
+              pattern="[A-ZА-Я][a-zа-я]+ [A-ZА-Я][a-zа-я]+$"
+              title="Please enter your full name, starting with capital letters (e.g., John Doe)."
+            />  
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              placeholder="Email"
+              title="Please enter a valid email address (e.g., user@example.com)."
+            />
+            <textarea class="form-textarea" name="comment" placeholder="Comment"></textarea>
+            <button class="form-submit-btn" type="submit">Send</button>
+          </form>
+          </div>
+          <div class="social-media-block">
+              <picture>
+                <source media="(max-width: 767px)"
+                        srcset="./img/womfill-mob-1x-min.jpg 1x, 
+                                ./img/womfill-mob-2x-min.jpg 2x, 
+                                ./img/womfill-mob-3x-min.jpg 3x">
+                <source media="(max-width: 1279px)"
+                        srcset="./img/womfill-tab-1x-min.jpg 1x, 
+                                ./img/womfill-tab-2x-min.jpg 2x, 
+                                ./img/womfill-tab-3x-min.jpg 3x">
+                <source media="(min-width: 1280px)"
+                        srcset="./img/womfill-desc-1x-min.jpg 1x, 
+                                ./img/womfill-desc-2x-min.jpg 2x, 
+                                ./img/womfill-desc-3x-min.jpg 3x">
+                <img src="./img/womfill-tab-1x-min.jpg" class="social-media-image" alt="Woman filling the blender with fruits">
+              </picture>
+            <p class="social-media-text">Follow us on our social networks:</p>
+              <ul class="social-media">
+                <li class="social-media-item">
+                  <a
+                    class="social-media-link"
+                    target="_blank"
+                    href="https://www.instagram.com/goitclub/"
+                    >instagram</a>
+                </li>
+                <li class="social-media-item">
+                  <a
+                    class="social-media-link"
+                    target="_blank"
+                    href="https://www.youtube.com/c/GoIT"
+                    >facebook</a>
+                </li>
+                <li class="social-media-item">
+                  <a
+                    class="social-media-link"
+                    target="_blank"
+                    href="https://www.facebook.com/goITclub/"
+                    >youtube</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+  </div>
 </section>
