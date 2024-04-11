@@ -22,7 +22,7 @@
     margin-bottom: 29px;
 }
 
-.harvest {
+.highlight-text-harvest {
     color: var(--harvest);
 }
 
@@ -49,7 +49,7 @@
     color: var(--text);
 }
 
-.from-us {
+.highlight-text-from-us {
     color: var(--background-2);
 }
 
