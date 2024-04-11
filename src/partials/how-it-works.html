@@ -2,18 +2,37 @@
   <div class="container">
     <h2 class="visually-hidden">How it works</h2>
     <div class="work-image-wrap">
-      <img
-        class="work-image-pic"
-        srcset="
-          /src/img/womcut-mob-1x-min.jpg 1x,
-          src/img/womcut-mob-2x-min.jpg  2x,
-          src/img/womcut-mob-3x-min.jpg  3x
-        "
-        src="/src/img/womcut-mob-1x-min.jpg"
-        width="335"
-        height="450"
-        alt="Woman with knife"
-      />
+      <picture>
+        <source
+          srcset="
+            ./src/img/womcut-desc-1x-min.jpg 1x,
+            ./src/img/womcut-desc-2x-min.jpg 2x,
+            ./src/img/womcut-desc-3x-min.jpg 3x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./src/img/womcut-tab-1x-min.jpg 1x,
+            ./src/img/womcut-tab-2x-min.jpg 2x,
+            ./src/img/womcut-tab-3x-min.jpg 3x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./src/img/womfill-mob-1x-min.jpg 1x,
+            ./src/img/womfill-mob-2x-min.jpg 2x,
+            ./src/img/womfill-mob-3x-min.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="work-image-pic"
+          src="./src/img/womcut-mob-1x-min.jpg"
+          alt="Woman with knife"
+        />
+      </picture>
     </div>
     <div class="work-steps-wrap">
       <h3 class="work-steps-subtit">
