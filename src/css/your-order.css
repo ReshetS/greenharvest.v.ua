@@ -14,7 +14,6 @@
 
 .your-order-title {
     display: block;
-    font-weight: 600;
     font-size: 48px;
     line-height: 1.04;
     letter-spacing: -0.01em;
@@ -28,7 +27,6 @@
 
 .your-order-text {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.29;
     margin-bottom: 40px;
 }
@@ -41,7 +39,6 @@
 
 .order-form-text {
     margin-bottom: 40px;
-    font-weight: 600;
     font-size: 24px;
     line-height: 1.08;
     letter-spacing: -0.01em;
@@ -97,14 +94,12 @@
 
 .order-form ::placeholder{
     font-weight: 500;
-    font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.02em;
     color: var(--text);
 }
 
 .form-submit-btn {
-    font-size: 14px;
     font-weight: 600;
     line-height: 1.29;
     letter-spacing: -0.01em;
@@ -157,7 +152,6 @@
 
 .social-media-item:not(:last-child):after {
     content: "/";
-    font-weight: 600;
     font-size: 24px;
     line-height: 1.08;
     margin: 0 8px;
@@ -180,7 +174,6 @@
     }
     
     .your-order-text{
-        font-size: 16px;
         line-height: 1.25;
         max-width: 640px;
     }
@@ -251,12 +244,6 @@
         font-size: 32px;
         line-height: 1.0;
     }
-
-    .divide-link{
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 1.0;
-    }
 }
 
 @media screen and (min-width:1280px) {
@@ -286,7 +273,7 @@
     }
 
     .order-block, .social-media-block  {
-        width: calc(100% - ((100px * 2) + 24px));
+        flex-basis: calc((100% - 24px) / 2);
     }
 
     .social-media-item:not(:last-child) {
