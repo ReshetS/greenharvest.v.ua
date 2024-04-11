@@ -1,1 +1,107 @@
-/* Styles for Vegetables section */
+.vegetables {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  letter-spacing: -0.01em;
+}
+
+.organic-title {
+  font-size: 48px;
+  line-height: 1.04;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  max-width: 335px;
+}
+
+.organic-title span {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.title-about {
+  font-weight: 500;
+  line-height: 1.29;
+  margin-bottom: 40px;
+  max-width: 335px;
+}
+
+.vg-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vg-item {
+  border-radius: 40px;
+  padding: 32px 26px;
+  flex-basis: auto;
+  background: #fbfbfb;
+}
+
+.vg-subtitle {
+  font-size: 28px;
+  line-height: 1;
+  color: #7a3145;
+  margin-bottom: 12px;
+}
+
+.price-list {
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 14px;
+}
+
+.vg-image {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .vegetables {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .organic-title {
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 50px;
+    max-width: 508px;
+  }
+
+  .title-about {
+    line-height: 1.25;
+    margin-bottom: 50px;
+    max-width: 626px;
+  }
+
+  .vg-list {
+    gap: 28px 20px;
+  }
+
+  .vg-item {
+    padding: 32px 30px;
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  .vg-subtitle {
+    font-size: 32px;
+  }
+
+  .price-list {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .organic-title {
+    margin-bottom: 25px;
+  }
+
+  .vg-list {
+    gap: 28px 21px;
+  }
+
+  .vg-item {
+    padding: 32px;
+    flex-basis: calc((100% - 2 * 21px) / 3);
+  }
+}
