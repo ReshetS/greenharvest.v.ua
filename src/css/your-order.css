@@ -197,6 +197,13 @@
         line-height: 1.25;
     }
 
+    .order-form::placeholder{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+    }
+
     .form-textarea{
         height: 95px;
         margin-bottom: 25px;
@@ -264,6 +271,7 @@
     .your-order-text {
         margin-right: auto;
         margin-bottom: 50px;
+        max-width: 742px;
     }
 
     .social-media-block{
