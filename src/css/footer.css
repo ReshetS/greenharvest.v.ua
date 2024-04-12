@@ -52,10 +52,6 @@
     gap: 40px;
 }
 
-.footer-nav {
-    
-}
-
 .footer-nav-list {
     display: flex;
     align-items: flex-start;
@@ -115,7 +111,7 @@
     color: rgba(251, 251, 251, 0.5);
 }
 
-.current {
+.footer-soc-link:last-child {
     margin-left: auto;
 }
 
@@ -156,10 +152,6 @@
     .footer-blok-nav {
         margin-left: auto;
         gap: 64px;
-    }
-
-    .footer-nav {
-        
     }
 
     .footer-nav-list {
