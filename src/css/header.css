@@ -9,8 +9,13 @@
   padding-top: 20px;
   padding-bottom: 48px;
 }
-.header-logo-mob {
+.footer-logo-link {
   display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo-mob {
   fill: #FBFBFB;
 }
 .button-menu-open-mob {
