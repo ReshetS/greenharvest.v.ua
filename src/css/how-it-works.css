@@ -30,7 +30,7 @@
 }
 
 
-.work-image-wrap::before {
+.work-image-wrap::after {
     content: '';
     width: 335px;
     height: 450px;
@@ -159,23 +159,14 @@
         padding-bottom: 100px;
     }
 
-    .work-image-wrap::before {
-        content: '';
+    .work-image-wrap::after {
         width: 640px;
         height: 640px;
-        position: absolute;
-        top: 0;
         left: 64px;
-
-
-        background-color: rgba(20, 20, 20, 0.3);
-        border-radius: 30px;
-        pointer-events: none;
-
     }
 
     .work-image-pic {
-        border-radius: 30px;
+
         max-width: 640px;
         height: 640px;
 
@@ -199,9 +190,7 @@
     }
 
     .work-steps-subtit {
-        font-weight: 600;
         font-size: 32px;
-        line-height: 1;
         width: 450px;
         margin-bottom: 25px;
     }
@@ -228,7 +217,6 @@
     .how-it-works>.container {
         display: flex;
         flex-direction: row;
-
         gap: 0
     }
 
@@ -242,19 +230,11 @@
     }
 
 
-    .work-image-wrap::before {
-        content: '';
-
+    .work-image-wrap::after {
         width: 430px;
         height: 559px;
-        position: absolute;
         top: 100px;
         left: 100px;
-
-
-        background-color: rgba(20, 20, 20, 0.3);
-        border-radius: 30px;
-        pointer-events: none;
 
     }
 
