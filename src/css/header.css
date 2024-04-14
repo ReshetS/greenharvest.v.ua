@@ -110,7 +110,7 @@
       letter-spacing: -0.02em;
     }
 
-    .button-shop-now{
+    .shop-now{
       border-radius: 30px;
       padding: 16px 32px;
       background-color: #7a3145;
@@ -118,6 +118,7 @@
       font-weight: 600;
       font-size: 18px;
       letter-spacing: -0.01em;
+      line-height: 1.11;
       text-transform: uppercase;
       color: var(--main-text);
     }
