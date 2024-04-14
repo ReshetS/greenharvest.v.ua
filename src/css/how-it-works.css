@@ -1,7 +1,5 @@
 /* Styles for "How It Works" section */
 .how-it-works {
-    padding-top: 40px;
-
     width: 100%;
     margin: 0 auto;
 
@@ -13,9 +11,6 @@
 
 .work-image-wrap {
     padding: 40px 20px;
-
-
-
 }
 
 .work-image {
@@ -29,8 +24,9 @@
 
     border-radius: 30px;
     max-width: 100%;
-    height: 450px;
+
     margin: 0 auto;
+
 
 }
 
@@ -101,6 +97,11 @@
     width: 100%
 }
 
+.work-steps-item:nth-child(2) {
+    padding: 12px 59px 12px 100px;
+
+}
+
 .work-steps-item {
     display: flex;
     align-items: center;
@@ -154,9 +155,6 @@
 
 
 @media screen and (min-width: 768px) {
-    .how-it-works {
-        padding-top: 100px;
-    }
 
     .work-image-wrap {
         padding: 100px 64px;
@@ -219,9 +217,7 @@
         gap: 0
     }
 
-    .how-it-works {
-        padding-top: 0px;
-    }
+
 
     .work-image-wrap {
         padding: 100px;
