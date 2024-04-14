@@ -113,7 +113,7 @@
 .modal-menu-item-shop:focus > .modal-menu-link-shop {
   color: #7a3145;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .mobile-menu {
     width: 351px;
     right: 0;
