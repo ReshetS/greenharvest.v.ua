@@ -155,9 +155,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .how-it-works {
-        padding-top: 100px;
-    }
+    .how-it-works {}
 
     .work-image-wrap {
         padding: 100px 64px;
@@ -220,9 +218,7 @@
         gap: 0
     }
 
-    .how-it-works {
-        padding-top: 0px;
-    }
+
 
     .work-image-wrap {
         padding: 100px;
