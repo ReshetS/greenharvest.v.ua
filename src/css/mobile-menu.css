@@ -1,4 +1,12 @@
 /* Styles for Mobile menu */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.4);
+}
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -110,5 +118,12 @@
     width: 351px;
     right: 0;
     left: auto;
+  }
+  .modal-close-icon-mini {
+    display: none;
+  }
+  .modal-close-icon-big {
+    display: block;
+    stroke: #fbfbfb;
   }
 }
