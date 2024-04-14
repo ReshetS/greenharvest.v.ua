@@ -1,38 +1,55 @@
-<div class="mobile-menu">
-  <div class="modal">
-    <button type="button" class="modal-btn">
-      <svg
-        class="modal-close-icon-mini"
-        width="20"
-        height="20"
-        aria-label="close-icon"
-        onclick="closeMobileMenu()"
-      >
-        <use href="./img/icons.svg#miniX"></use>
-      </svg>
-      <svg
-        class="modal-close-icon-big"
-        width="24"
-        height="24"
-        aria-label="close-icon"
-        onclick="closeMobileMenu()"
-      >
-        <use href="./img/icons.svg#bigX"></use>
-      </svg>
-    </button>
-    <ul class="modal-menu">
-      <li class="modal-menu-item">
-        <a href="#how-it-works" class="modal-menu-link">how it works</a>
-      </li>
-      <li class="modal-menu-item">
-        <a href="#vegetables" class="modal-menu-link">vegetables</a>
-      </li>
-      <li class="modal-menu-item-shop">
-        <a href="#reviews" class="modal-menu-link">reviews</a>
-      </li>
-      <li class="">
-        <a href="#your-order" class="modal-menu-link-shop">shop now</a>
-      </li>
-    </ul>
+<div class="backdrop" id="mobile-menu">
+  <div class="mobile-menu">
+    <div class="modal container">
+      <button type="button" class="modal-btn" onclick="closeMobileMenu()">
+        <svg
+          class="modal-close-icon-mini"
+          width="20"
+          height="20"
+          aria-label="close-icon"
+        >
+          <use href="./img/icons.svg#miniX"></use>
+        </svg>
+        <svg
+          class="modal-close-icon-big"
+          width="24"
+          height="24"
+          aria-label="close-icon"
+        >
+          <use href="./img/icons.svg#bigX"></use>
+        </svg>
+      </button>
+      <ul class="modal-menu">
+        <li class="modal-menu-item">
+          <a
+            href="#how-it-works"
+            class="modal-menu-link"
+            onclick="closeMobileMenu()"
+            >how it works</a
+          >
+        </li>
+        <li class="modal-menu-item">
+          <a
+            href="#vegetables"
+            class="modal-menu-link"
+            onclick="closeMobileMenu()"
+            >vegetables</a
+          >
+        </li>
+        <li class="modal-menu-item">
+          <a href="#reviews" class="modal-menu-link" onclick="closeMobileMenu()"
+            >reviews</a
+          >
+        </li>
+        <li class="modal-menu-item-shop">
+          <a
+            href="#your-order"
+            class="modal-menu-link-shop"
+            onclick="closeMobileMenu()"
+            >shop now</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
