@@ -15,16 +15,13 @@
 }
 
 .adv-text-span {
-    display: block;
+    display: inline-block;
     color: #fbfbfb;
     border-radius: 12px;
     max-width: 355px;
-    height: 102px;
     background-color: #576f35;
-    position: relative;
-    left: -10px;
-    right: 10px;
-    padding: 3px 10px;
+    padding: 0 10px;
+    margin: 0 -10px;
 }
 
 @media screen and (min-width:768px) {
@@ -38,14 +35,13 @@
         font-size: 64px;
         line-height: 1.09;
 
-    }
+    }   
 
     .adv-text-span {
-        left: -16px;
-        right: 16px;
+        display: block;
+        margin: 0 -16px;
         padding: 8px 16px;
         max-width: 736px;
-        height: 86px;
     }
 
 }
@@ -55,17 +51,14 @@
     .adv-text {
         font-size: 76px;
         line-height: 1.05;
-        padding-left: 13px;
-        padding-right: 13px;
+        padding: 0 13px;
     }
 
     .adv-text-span {
         display: inline-block;
-        max-width: 808px;
-        height: 86px;
-        left: -13px;
-        right: 13px;
-        padding: 0 0 0 13px;
+        max-width: none; 
+        padding: 0 13px;
+        margin:0 0 0 -13px;
     }
 
 }
