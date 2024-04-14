@@ -1,12 +1,11 @@
-<div class="mobile-menu">
-  <div class="modal">
-    <button type="button" class="modal-btn">
+<div class="mobile-menu is-open">
+  <div class="modal container">
+    <button type="button" class="modal-btn" onclick="closeMobileMenu()">
       <svg
         class="modal-close-icon-mini"
         width="20"
         height="20"
         aria-label="close-icon"
-        onclick="closeMobileMenu()"
       >
         <use href="./img/icons.svg#miniX"></use>
       </svg>
@@ -15,7 +14,6 @@
         width="24"
         height="24"
         aria-label="close-icon"
-        onclick="closeMobileMenu()"
       >
         <use href="./img/icons.svg#bigX"></use>
       </svg>
@@ -27,10 +25,10 @@
       <li class="modal-menu-item">
         <a href="#vegetables" class="modal-menu-link">vegetables</a>
       </li>
-      <li class="modal-menu-item-shop">
+      <li class="modal-menu-item">
         <a href="#reviews" class="modal-menu-link">reviews</a>
       </li>
-      <li class="">
+      <li class="modal-menu-item-shop">
         <a href="#your-order" class="modal-menu-link-shop">shop now</a>
       </li>
     </ul>
