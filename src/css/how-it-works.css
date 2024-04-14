@@ -101,6 +101,11 @@
     width: 100%
 }
 
+.work-steps-item:nth-child(2) {
+    padding: 12px 59px 12px 100px;
+
+}
+
 .work-steps-item {
     display: flex;
     align-items: center;
