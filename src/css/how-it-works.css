@@ -4,12 +4,10 @@
   margin: 0 auto;
 }
 
-.how-it-works > .container {
-  padding: 0;
-}
-
 .work-image-wrap {
   padding: 40px 20px;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .work-image {
@@ -19,7 +17,6 @@
 .work-image-pic {
   border-radius: 30px;
   max-width: 100%;
-
   margin: 0 auto;
 }
 
@@ -35,12 +32,14 @@
   pointer-events: none;
 }
 
-.work-steps-wrap {
+.work-steps-container {
   background-color: #576f35;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.work-steps-wrap {
+  padding: 80px 20px;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .work-steps-txt-wrap {
@@ -137,6 +136,8 @@
 @media screen and (min-width: 768px) {
   .work-image-wrap {
     padding: 100px 64px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .work-image-pic {
@@ -145,10 +146,9 @@
   }
 
   .work-steps-wrap {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 159px;
-    padding-right: 159px;
+    padding: 100px 159px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .work-steps-txt-wrap {
@@ -177,15 +177,21 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .how-it-works > .container {
+  .how-it-works {
     display: flex;
-    flex-direction: row;
     gap: 0;
   }
 
+  .work-image-container {
+    flex-basis: calc(50% - 10px);
+    display: flex;
+  }
+
   .work-image-wrap {
-    padding: 100px;
+    position: relative;
     flex-basis: 630px;
+    padding: 100px;
+    margin: 0 0 0 auto;
   }
 
   .work-image-pic {
@@ -193,8 +199,14 @@
     height: 559px;
   }
 
+  .work-steps-container {
+    flex-basis: calc(50% + 10px);
+    display: flex;
+  }
+
   .work-steps-wrap {
     flex-basis: 650px;
     padding: 100px 100px 160px 100px;
+    margin: 0 auto 0 0;
   }
 }
