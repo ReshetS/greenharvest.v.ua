@@ -47,4 +47,20 @@
       </button>
     </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const header = document.querySelector('.container');
+      const tenPercentOfViewportHeight = window.innerHeight * 0.1;
+
+      function checkScroll() {
+        if (window.scrollY > tenPercentOfViewportHeight) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll);
+    });
+  </script>
 </header>

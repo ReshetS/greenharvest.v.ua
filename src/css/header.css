@@ -1,7 +1,8 @@
 /* Header styles */
 .header .container {
-  position: fixed;
-  z-index: 3;
+position: fixed;
+z-index: 3;
+transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-container {
@@ -14,6 +15,12 @@
   right: 0;
   top: 20px;
   width: 100%;
+}
+
+.container.scrolled {
+  padding: 35px 0;
+  background-color: rgba(87, 111, 63, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo-link{
@@ -45,6 +52,10 @@
     padding: 0 32px;
     top: 32px;
   }
+
+    .container.scrolled {
+      padding: 50px 0;
+    }
 
   .header-logo-link {
     gap: 8px;
@@ -82,6 +93,10 @@
   .header-container {
       padding: 0 100px;
     }
+
+  .container.scrolled{
+    padding: 40px 0;  
+  }
 
     .button-menu-open-td{
       display: none;  
