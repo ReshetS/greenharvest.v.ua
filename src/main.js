@@ -16,8 +16,7 @@
   function toogleIsOpen() {
     mobileMenu.modal.classList.toggle('is-open');
   }
-})
-(() => {
+
   document.addEventListener('DOMContentLoaded', function () {
     const block = document.querySelector('.header-container');
     const blockRect = block.getBoundingClientRect();
@@ -34,5 +33,5 @@
     }
 
     window.addEventListener('scroll', checkScroll);
-  })
-});
+  });
+})();
