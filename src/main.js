@@ -17,20 +17,22 @@
     mobileMenu.modal.classList.toggle('is-open');
   }
 })
+(() => {
   document.addEventListener('DOMContentLoaded', function () {
-  const block = document.querySelector('.header-container'); 
-  const blockRect = block.getBoundingClientRect();
-  const blockStart = blockRect.top + window.pageYOffset; // Висота від початку сторінки до блоку
-  const blockHeight = blockRect.height;
+    const block = document.querySelector('.header-container');
+    const blockRect = block.getBoundingClientRect();
+    const blockStart = blockRect.top + window.pageYOffset; // Висота від початку сторінки до блоку
+    const blockHeight = blockRect.height;
 
-  function checkScroll() {
-    const scrolledPast = window.pageYOffset - blockStart; // Як далеко ми проскролили від початку блоку
-    if (scrolledPast > (blockHeight * 1.2)) { // 120% прокрутки блоку
-      block.classList.add('scrolled'); 
-    } else {
-      block.classList.remove('scrolled'); 
+    function checkScroll() {
+      const scrolledPast = window.pageYOffset - blockStart; // Як далеко ми проскролили від початку блоку
+      if (scrolledPast > (blockHeight * 1.2)) { // 120% прокрутки блоку
+        block.classList.add('scrolled');
+      } else {
+        block.classList.remove('scrolled');
+      }
     }
-  }
 
-  window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', checkScroll);
+  })
 });
