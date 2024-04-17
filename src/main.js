@@ -1,4 +1,6 @@
 (() => {
+  const body = document.body;
+
   const mobileMenu = {
     modal: document.querySelector('#mobile-menu'),
     menuOpenBtn: document.querySelector('.button-menu-open'),
@@ -15,6 +17,7 @@
   mobileMenu.menuCloseByLinkShop.addEventListener('click', toogleIsOpen);
   function toogleIsOpen() {
     mobileMenu.modal.classList.toggle('is-open');
+    body.classList.toggle('no-scroll');
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -25,7 +28,8 @@
 
     function checkScroll() {
       const scrolledPast = window.pageYOffset - blockStart; // Як далеко ми проскролили від початку блоку
-      if (scrolledPast > (blockHeight * 1.2)) { // 120% прокрутки блоку
+      if (scrolledPast > blockHeight * 1.2) {
+        // 120% прокрутки блоку
         block.classList.add('scrolled');
       } else {
         block.classList.remove('scrolled');

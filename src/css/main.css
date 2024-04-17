@@ -55,6 +55,10 @@
   overflow: hidden;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
