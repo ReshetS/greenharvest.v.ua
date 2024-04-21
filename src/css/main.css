@@ -14,6 +14,7 @@
 @import url('./your-order.css');
 @import url('./footer.css');
 @import url('./mobile-menu.css');
+@import url('./modal-overlay.css');
 
 :root {
   font-family: 'Inter Tight', sans-serif;
