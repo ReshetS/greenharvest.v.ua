@@ -6,8 +6,10 @@
     menuOpenBtn: document.querySelector('.button-menu-open'),
     menuCloseBtn: document.querySelector('.modal-btn'),
     menuCloseByLink: document.querySelectorAll('.modal-menu-link'),
-    menuCloseByLinkShop: document.querySelector('.modal-menu-link-shop'),
+    menuCloseByLinkShop: document.querySelector('#your-order-btn'),
   };
+
+  const shopNowBtnDesk = document.querySelector('#your-order-btn-desk');
 
   function toggleIsOpen() {
     mobileMenu.modal.classList.toggle('is-open');
@@ -23,6 +25,10 @@
 
   mobileMenu.menuCloseByLinkShop.addEventListener('click', function(event) {
     toggleIsOpen(); 
+    toggleModal(true); 
+  });
+
+  shopNowBtnDesk.addEventListener('click', function() {
     toggleModal(true); 
   });
 
