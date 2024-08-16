@@ -1,0 +1,47 @@
+<div class="modal-overlay">
+  <div class="container">
+    <div class="shop-now-modal">
+      <button type="button" class="close-btn" id="close-btn">
+        <svg
+          class="modal-close-icon"
+          width="32"
+          height="32"
+          aria-label="close-icon"
+        >
+          <use href="./img/icons.svg#miniX"></use>
+        </svg>
+      </button>
+      <form class="modal-form">
+        <p class="modal-text">
+          Fill out <span class="modal-text-separation">the form</span> below and
+          we will contact you!
+        </p>
+        <input
+          class="modal-input"
+          type="text"
+          name="full-name"
+          required
+          placeholder="Full Name"
+          pattern="[A-ZА-Я][a-zа-я]+ [A-ZА-Я][a-zа-я]+$"
+          title="Please enter your full name, starting with capital letters (e.g., John Doe)."
+        />
+        <input
+          class="modal-input"
+          type="email"
+          name="email"
+          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          placeholder="Email"
+          title="Please enter a valid email address (e.g., user@example.com)."
+        />
+        <textarea
+          class="modal-textarea"
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
+        <button class="modal-submit-btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  </div>
+</div>
